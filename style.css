@@ -48,6 +48,11 @@ body {
   height: 40px;
   background: none;
   border-radius: 50%;
+  cursor: pointer;
+}
+.header__userimg:hover {
+  transform: rotateY(360deg);
+  transition: 1s;
 }
 
 .header .carrito {
@@ -294,4 +299,18 @@ img {
   background-color: rgb(116, 116, 116);
   transform: scale(1.1);
   transition: 1s;
+}
+
+.modal-body {
+  background-color: #8686ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.modal-body label {
+  background-color: #b9b989;
 }
