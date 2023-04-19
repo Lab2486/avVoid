@@ -6,8 +6,6 @@ const modalCarrito = document.querySelector(".modal-carrito");
 const btnVaciar = document.getElementById("vaciar-carrito");
 const contadorCarrito = document.getElementById("cantidadCarrito");
 const precioTotal = document.getElementById("precioTotal");
-const loginBtn = document.getElementById("loginBtn");
-const contenedorModalLogin = document.getElementById("modalLogin");
 
 botonAbrir.addEventListener("click", () => {
   contenedorModal.classList.add("modal-active");
@@ -142,12 +140,16 @@ const actualizarCarrito = () => {
 };
 
 const modalLogin = document.getElementById("modalLogin");
+const loginBtn = document.getElementById("loginBtn");
+const contenedorModalLogin = document.getElementById("modalLogin");
+const loginClose = document.getElementById("loginClose");
 
 loginBtn.addEventListener("click", () => {
   let modalBody = document.createElement("div");
   modalBody.classList.add("modal-body");
   modalBody.innerHTML = `
-  <p>Login</p>
+  <button id="loginClose" class="login-close">X</button>
+  <p class="login-title">Login</p>
   <label for="email">email</label>
   <input type="email" required>
   <label for="password">password</label>
@@ -155,4 +157,11 @@ loginBtn.addEventListener("click", () => {
   <button type="submit">Login</button>
   `;
   contenedorModalLogin.appendChild(modalBody);
+});
+
+loginBtn.addEventListener("click", () => {
+  modalBody.classList.add("modal-active");
+});
+loginClose.addEventListener("click", () => {
+  modalBody.style.display = "none";
 });

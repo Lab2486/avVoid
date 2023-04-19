@@ -301,16 +301,28 @@ img {
   transition: 1s;
 }
 
+.login-contenedor {
+  background: transparent;
+}
 .modal-body {
   background-color: #8686ff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 300px;
-  width: 300px;
+  width: 350px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.login-title {
+  color: pink;
+  text-align: center;
+  font-size: 1rem;
 }
 
-.modal-body label {
-  background-color: #b9b989;
+.login-close {
+  background-color: red;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
 }
