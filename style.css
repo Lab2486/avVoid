@@ -301,28 +301,32 @@ img {
   transition: 1s;
 }
 
-.login-contenedor {
-  background: transparent;
-}
-.modal-body {
-  background-color: #8686ff;
+.form-login {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  padding: 20px 30px;
-  border-radius: 10px;
-}
-.login-title {
-  color: pink;
-  text-align: center;
-  font-size: 1rem;
 }
 
-.login-close {
-  background-color: red;
-  width: 25px;
-  border-radius: 50%;
+.form-login input {
+  background-color: lightgrey;
+}
+
+.modal-footer {
   display: flex;
+  justify-content: space-around;
+}
+
+.login-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #212529;
+  color: white;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-self: flex-end;
+}
+
+.login-button:hover {
+  background-color: #424649;
 }
