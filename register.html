@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Registro</title>
+  </head>
+  <body class="form-body">
+    <header>
+      <div class="titulos">
+        <h1>Av Void</h1>
+        <h2>Music Library</h2>
+      </div>
+    </header>
+    <section class="form-section">
+      <div class="form-contendor">
+        <div  class="form-contendor">
+          <form id="formRegistro" class="formulario">
+            <label for="username">Name</label>
+            <input type="text" id="name" required autofocus />
+            <label for="emailLog">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="passwordLog">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br /><br />
+            <button type="submit" value="ingresar">Ingresar</button>
+          </form>
+          <p>ya tenes cuenta? <a href="./login.html">Login</a></p>
+        </div>
+    </section>
+    <footer class="footer"><p>Designed by Lab2486</p></footer>
+    <script src="./JS/registro.js"></script>
+  </body>
+</html>

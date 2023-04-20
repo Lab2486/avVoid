@@ -138,3 +138,15 @@ const actualizarCarrito = () => {
   contadorCarrito.innerText = carrito.length;
   precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.price, 0);
 };
+
+const user = JSON.parse(localStorage.getItem("login_sucess")) || false;
+if (!user) {
+  window.location.href = "login.html";
+}
+
+const logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+  alert("Nos vemos");
+  localStorage.removeItem("login-succes");
+  window.location.href = "login.html";
+});
