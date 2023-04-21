@@ -61,6 +61,9 @@
           Precio total: $<span id="precioTotal"></span>
         </p>
         <button id="vaciar-carrito" class="boton-vaciar">Vaciar Carrito</button>
+        <button id="finalizarCompra" class="boton-vaciar">
+          Finalizar compra
+        </button>
       </div>
     </div>
 
@@ -82,7 +85,26 @@
       <div id="products"></div>
     </div>
 
+    <div class="music">
+      <div class="info">
+        <h1>All Night Long - Jokr</h1>
+        <p>Head Hunter EP</p>
+      </div>
+      <div class="controls">
+        <img src="/media/play-fill.svg" id="playBtn" class="btns" alt="play" />
+        <img src="/media/stop-fill.svg" id="stopBtn" class="btns" alt="stop" />
+        <img
+          src="/media/volume-up-fill.svg"
+          id="volumenBtn"
+          class="btns"
+          alt="play"
+        />
+      </div>
+      <div id="waveform" class="music__mp3"></div>
+    </div>
+
     <div class="login-contenedor" id="modalLogin"></div>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <script src="./JS/api.js"></script>
     <script src="./JS/catalogo.js"></script>
     <script src="./JS/script.js"></script>

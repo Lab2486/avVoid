@@ -6,6 +6,7 @@ const modalCarrito = document.querySelector(".modal-carrito");
 const btnVaciar = document.getElementById("vaciar-carrito");
 const contadorCarrito = document.getElementById("cantidadCarrito");
 const precioTotal = document.getElementById("precioTotal");
+const finalizarCompra = document.getElementById("finalizarCompra");
 
 botonAbrir.addEventListener("click", () => {
   contenedorModal.classList.add("modal-active");
@@ -138,6 +139,7 @@ const actualizarCarrito = () => {
   contadorCarrito.innerText = carrito.length;
   precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.price, 0);
 };
+//login
 
 const user = JSON.parse(localStorage.getItem("login_sucess")) || false;
 if (!user) {
@@ -150,3 +152,45 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("login-succes");
   window.location.href = "login.html";
 });
+
+//WAVESURFER--------
+let playBtn = document.getElementById("playBtn");
+let pauseBtn = document.getElementById("pauseBtn");
+let stopBtn = document.getElementById("stopBtn");
+let volumenBtn = document.getElementById("volumenBtn");
+
+var wavesurfer = WaveSurfer.create({
+  container: "#waveform",
+  waveColor: "white",
+  progressColor: "darkred",
+  barWidth: 5,
+  barHeight: 0.5,
+  barRadius: 5,
+  responsive: true,
+  hideScrollbar: true,
+});
+
+wavesurfer.load(
+  "./media/JØKR - All Night Long (Original Mix) Bandcamp Exclusive.mp3"
+);
+
+playBtn.onclick = function () {
+  wavesurfer.playPause();
+  if (playBtn.src.includes("/media/play-fill.svg")) {
+    playBtn.src = "/media/pause-fill.svg";
+  } else {
+    playBtn.src = "/media/play-fill.svg";
+  }
+};
+
+stopBtn.onclick = function () {
+  wavesurfer.stop();
+};
+volumenBtn.onclick = function () {
+  wavesurfer.toggleMute();
+  if (volumenBtn.src.includes("/media/volume-up-fill.svg")) {
+    volumenBtn.src = "/media/volume-mute-fill.svg";
+  } else {
+    volumenBtn.src = "/media/volume-up-fill.svg";
+  }
+};
