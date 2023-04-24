@@ -198,8 +198,13 @@ let products = {
       category: "Psytrance",
       price: 20,
       image: "./media/higonacid.jpg",
-      sound: "./media/Blastoyz - High On Acid ★#1 Beatport Top 100★.mp3",
+      sound: "./media/Blastoyz - High On Acid.mp3",
       id: 24,
     },
   ],
 };
+
+localStorage.setItem("catalogo", JSON.stringify(products));
+
+const catalogoEnLocal = localStorage.getItem("catalogo");
+const catalogoObjeto = JSON.parse(catalogoEnLocal);
