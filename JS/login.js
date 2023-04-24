@@ -9,9 +9,8 @@ formLogin.addEventListener("submit", (e) => {
     (user) => user.email === email && user.password === password
   );
   if (!validUser) {
-    return alert("Usuario y/o contraseña incorrectos");
+    return swal("Usuario y/o contraseña incorrectos");
   }
-  alert(`Bienvenido ${validUser.name}`);
   localStorage.setItem("login_sucess", JSON.stringify(validUser));
   window.location.href = "index.html";
 });

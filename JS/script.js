@@ -30,6 +30,26 @@ btnVaciar.addEventListener("click", () => {
   actualizarCarrito();
 });
 
+finalizarCompra.addEventListener("click", () => {
+  if (carrito.length === 0) {
+    swal({
+      title: "Carrito vacio",
+      text: "Tu carrito esta vacio bro",
+      icon: "error",
+      button: "Uh que bldo tenes razon",
+    });
+  } else {
+    swal({
+      title: "Compra Finalizada",
+      text: "Gracias por su compra",
+      icon: "success",
+      button: "De nada, altos tracks me compre",
+    });
+    carrito.length = 0;
+    actualizarCarrito();
+  }
+});
+
 //main------------------------
 
 const contenedorCarrito = document.getElementById("carritoContenedor");
@@ -148,7 +168,6 @@ if (!user) {
 
 const logout = document.getElementById("logout");
 logout.addEventListener("click", () => {
-  alert("Nos vemos");
   localStorage.removeItem("login-succes");
   window.location.href = "login.html";
 });

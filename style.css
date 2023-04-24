@@ -352,6 +352,15 @@ img {
   box-shadow: 0 0 30px #b9b989;
 }
 
+.logout-btn {
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  color: #8686ff;
+}
+
 .formulario {
   text-align: start;
   display: flex;
@@ -425,4 +434,8 @@ img {
 
 .music__mp3 {
   width: 80%;
+}
+
+wave {
+  height: 70px;
 }
