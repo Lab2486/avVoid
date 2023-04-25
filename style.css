@@ -6,7 +6,9 @@
   outline: none;
 }
 body {
-  background-color: #1d4f53;
+  /* background-color: #3a3a3a; */
+  background-image: url(./media/pexels-vlad-chețan-2892619.jpg);
+  background-size: contain;
 }
 
 .header {
