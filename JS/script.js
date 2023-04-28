@@ -51,7 +51,6 @@ finalizarCompra.addEventListener("click", () => {
 });
 
 //main------------------------
-
 const contenedorCarrito = document.getElementById("carritoContenedor");
 
 function filterProduct(value) {

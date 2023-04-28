@@ -111,7 +111,7 @@ let products = {
       price: 20,
       image: "./media/eddy.jpg",
       sound: "./media/Eddy JB - Destroy (Original Mix).mp3",
-      id: 13,
+      id: 14,
     },
     {
       productName: "Isma Sgly - Black Jack",
@@ -119,7 +119,7 @@ let products = {
       price: 20,
       image: "./media/isma-sgyl.jpg",
       sound: "./media/Isma Sgly - Black Jack (Original Mix).mp3",
-      id: 14,
+      id: 15,
     },
     {
       productName: "Isma Sgly - Contramano",
@@ -127,7 +127,7 @@ let products = {
       price: 20,
       image: "./media/isma-sgyl.jpg",
       sound: "./media/Isma Sgly - Contramano (Original Mix).mp3",
-      id: 15,
+      id: 16,
     },
     {
       productName: "Bernandbe - The Last",
@@ -135,7 +135,7 @@ let products = {
       price: 20,
       image: "./media/bernadee.jpg",
       sound: "./media/Bernandbe - The Last (Original Mix).mp3",
-      id: 16,
+      id: 17,
     },
     {
       productName: "Bernandbe - Funny Beat",
@@ -143,7 +143,7 @@ let products = {
       price: 20,
       image: "./media/bernadee.jpg",
       sound: "./media/Bernandbe - Funny Beat (Original Mix).mp3",
-      id: 17,
+      id: 18,
     },
     {
       productName: "Bernandbe - Resonator",
@@ -151,7 +151,7 @@ let products = {
       price: 20,
       image: "./media/bernadee.jpg",
       sound: "./media/Bernandbe - Resonator (Original Mix).mp3",
-      id: 18,
+      id: 19,
     },
     {
       productName: "Bernar - No Can Do",
@@ -159,7 +159,7 @@ let products = {
       price: 20,
       image: "./media/bernar.jpg",
       sound: "./media/Bernar - No Can Do.mp3",
-      id: 19,
+      id: 20,
     },
     {
       productName: "Mandala - Inspiration",
@@ -167,7 +167,7 @@ let products = {
       price: 20,
       image: "./media/mandala.jpg",
       sound: "./media/Mandala - Inspiration Station.mp3",
-      id: 20,
+      id: 21,
     },
     {
       productName: "Mandala - Space Time",
@@ -175,7 +175,7 @@ let products = {
       price: 20,
       image: "./media/mandala.jpg",
       sound: "./media/Mandala - Space Time.mp3",
-      id: 21,
+      id: 22,
     },
     {
       productName: "Mandala- An Infinite Sea",
@@ -183,7 +183,7 @@ let products = {
       price: 20,
       image: "./media/mandala back.jpg",
       sound: "./media/Mandala-An Infinite Sea.mp3",
-      id: 22,
+      id: 23,
     },
     {
       productName: "Mandala - Neutron Star",
@@ -191,7 +191,7 @@ let products = {
       price: 20,
       image: "./media/mandala back.jpg",
       sound: "./media/Mandala - Neutron Star (clip).mp3",
-      id: 23,
+      id: 24,
     },
     {
       productName: "Blastoyz - High On Acid",
@@ -199,7 +199,7 @@ let products = {
       price: 20,
       image: "./media/higonacid.jpg",
       sound: "./media/Blastoyz - High On Acid.mp3",
-      id: 24,
+      id: 25,
     },
   ],
 };
